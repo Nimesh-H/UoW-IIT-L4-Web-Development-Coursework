@@ -1,0 +1,612 @@
+body{
+  /*background-image: linear-gradient(to right, #090A0A,#003447, #090A0A);*/
+  background-color: #000;
+  color: white;
+  font-family: arial;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+
+}
+
+  *{
+    margin: 0;
+    padding: 0;
+
+  }
+    /*font colors*/
+#fontredbg{
+  color: red;
+}
+
+#fontbluebg{
+  color:blue;
+}
+
+#fontgreybg{
+  color: grey;
+
+}
+
+#menu {
+  position: relative;
+  float: right;
+  right: 20px;
+
+
+}
+nav {
+    width: 550px;
+    font-size: 12px;
+
+}
+
+
+nav ul {
+  list-style: none;
+
+}
+nav ul li {
+  float: left;
+  width: 20%;
+}
+nav ul li a {
+  text-align: center;
+  padding: 8px 0;
+  display: block;
+  width: 100%;
+  background-color:#1C1C1B;
+  text-decoration: none;
+  color: white;
+
+  }
+
+
+  nav ul ul{
+    display: none;
+    width: 100%;
+    float: left;
+    cursor: pointer;
+  }
+  nav ul li:hover > ul{
+    display: block;
+
+  }
+
+    /*display colors of blocks after one is hovered for font color tab*/
+
+    nav ul li:hover > ul:hover .fontred{
+      display: block;
+      background-color: red;
+    }
+    nav ul li:hover > ul:hover .fontblue{
+      display: block;
+      background-color: blue;
+    }
+
+    nav ul li:hover > ul:hover .fontgrey{
+      display: block;
+      background-color: grey;
+    }
+
+    /*css for nav (ul)*/
+  .red{
+    height: 20px;
+    background-color: red;
+
+  }
+
+  .blue{
+    height: 20px;
+    background-color:blue;
+
+  }
+
+  .green{
+    height: 20px;
+    background-color: green;
+
+  }
+
+  .gold{
+    height: 20px;
+    background-color: gold;
+
+  }
+
+  .fontblue{
+
+  }
+
+  .fontred{
+
+  }
+
+
+  /*IMAGE GALLERY*/
+
+  .image-gallery{
+    margin-left: 10px;
+    float: left;
+    position: relative;
+    left: 20px;
+
+  }
+
+  .image-gallery img{
+    transition: 1s;
+    padding: 15px;
+    width: 220px;
+    height: 300px;
+    position: relative;
+    left: 10px;
+    cursor: pointer;
+
+  }
+
+  .image-gallery img:hover{
+    filter: grayscale(70%);
+    transform: scale(1.1);
+
+  }
+
+  .upcoming{
+
+    width: 350px;
+    padding: 2px;
+    position: relative;
+    left: 20px;
+    color: #00acc1;
+    font-size: 25px;
+
+  }
+
+  .copyright{
+    background-color: #0F0E0F;
+    height: 30px;
+    width: 100%;
+  }
+
+
+
+  /* Next & previous buttons */
+.prev,
+.next {
+
+position: absolute;
+padding: 16px;
+top: 50%;
+margin-top: -51px;
+cursor: pointer;
+color: white;
+font-size: 20px;
+transition: 0.6s ;
+
+}
+
+/* Position the "next button" to the right */
+.prev {
+right: 100%;
+
+}
+
+.next{
+
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,.next:hover
+{
+background-color: grey;
+
+}
+
+  /* The galleryslide (background) */
+.galleryslide {
+display: none;
+position: fixed;
+z-index: 1;
+padding-top: 100px;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+overflow: auto;
+background-color: black;
+}
+
+/* galleryslide Content */
+.galleryslide-content {
+position: relative;
+background-color:black;
+margin: auto;
+padding: 0;
+width: 90%;
+max-width: 1200px;
+
+}
+
+/* The Close Button */
+.close {
+color: white;
+position: absolute;
+top: 20px;
+right: 25px;
+font-size: 85px;
+font-weight: bold;
+height: 20px;
+}
+
+.close:hover,
+.close:focus {
+color: #999;
+text-decoration: none;
+cursor: pointer;
+}
+
+
+
+.cursor {
+cursor: pointer;
+}
+
+
+
+img {
+margin-bottom: -4.2px;
+}
+
+.caption-container {
+text-align: center;
+background-color: #000;
+padding: 3px 17px;
+font-family: Arial;
+color: white;
+}
+
+.zoom1 {
+opacity: 0.6;
+}
+
+.active,
+.zoom1:hover {
+opacity: 1;
+}
+
+.row > .column {
+padding: 0px;
+}
+
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+.column {
+float: left;
+width: 14.2%;
+}
+
+
+#gall img {
+opacity: 1%;
+}
+
+.more {
+position: relative;
+top:  10px;
+right: 10px;
+color: blue;
+text-decoration: none;
+list-style: none;
+float: right;
+}
+
+.image-gallery2{
+width: 400px;
+height: 280px;
+position: relative;
+float: left;
+margin: 10px;
+background-size: 150%;
+background-position: center;
+transition: 0.5s;
+top: 30px;
+left: 30px;
+font-weight: lighter;
+
+}
+
+.image-gallery2:hover{
+background-size: 120%;
+
+}
+
+.image-gallery2:after{
+content: attr(movietext);
+position: absolute;
+top: 100%;
+left: 0;
+bottom: 0;
+right: 0;
+word-wrap: break-word;
+overflow: hidden;
+background-color:rgba(0,0,0,0.6);
+padding: 7.5px;
+transition: 0.5s;
+opacity: 0;
+
+}
+
+
+.image-gallery2:hover::after{
+opacity: 1  ;
+top:0;
+}
+
+
+
+.neymar p {
+position: relative;
+top: 290px;
+right: 160px;
+float: right;
+
+
+}
+
+
+.messi p {
+position: relative;
+top: 290px;
+right: 130px;
+float: right;
+
+}
+
+.ronaldo p {
+position: relative;
+top: 290px;
+right: 160px;
+float: right;
+
+}
+
+
+.parallex{
+box-sizing: border-box;
+min-height: 100vh;
+padding: 30vw 0 5vw;
+position: relative;
+transform-style: inherit;
+
+top: 1190px;
+
+}
+
+.parallex h1{
+margin-top: -100px;
+position: relative;
+bottom: 1000px;
+font-weight: bold;
+}
+
+.parallex, .parallex:before{
+background: 50% 50% / cover;
+}
+
+.parallex::before{
+bottom: 0;
+content: "";
+left: 0;
+position: absolute;
+right: 0;
+top: 0;
+display: block;
+background-image: url(images/uefa2.jpg);
+background-size: cover;
+transform-origin: center center 0;
+transform: translateZ(-1px) scale(2);
+z-index: -1;
+min-height: 100vh;
+
+}
+
+
+
+.parallex *{
+font-weight: normal;
+letter-spacing: 0.2em;
+text-align: center;
+margin: 0;
+padding: 1em 0 ;
+position: relative;
+bottom: 1000px;
+
+}
+
+
+
+.parallex2{
+box-sizing: border-box;
+min-height: 100vh;
+padding: 30vw 0 5vw;
+position: relative;
+transform-style: inherit;
+
+top: 2590px;
+
+}
+
+.parallex2 h1{
+margin-top: -100px;
+position: relative;
+bottom: 1000px;
+}
+
+.parallex2, .parallex2:before{
+background: 50% 50% / cover;
+}
+
+.parallex2::before{
+bottom: 0;
+content: "";
+left: 0;
+position: absolute;
+right: 0;
+top: 0;
+display: block;
+background-image: url(images/messi4.jpg);
+background-size: cover;
+transform-origin: center center 0;
+transform: translateZ(-1px) scale(2);
+z-index: -1;
+min-height: 100vh;
+
+}
+
+
+
+.parallex2 *{
+font-weight: normal;
+letter-spacing: 0.2em;
+text-align: center;
+margin: 0;
+padding: 1em 0 ;
+position: relative;
+bottom: 1000px;
+
+}
+
+.footer {
+position: relative;
+top:3291px;
+width: 100%;
+background-color:#1F1C1D;
+color: white;
+text-align: center;
+}
+html{
+height: 100%;
+width: 100%;
+overflow: hidden;
+}
+
+.hr{
+position: relative;
+left: 390px;
+}
+
+.copyright p{
+color:#333032;
+position: relative;
+top:10px;
+
+}
+
+.parallex3{
+position: relative;
+top:3000px;
+
+}
+.parallex3 img{
+position: relative;
+height:300px;
+width:900px;
+left: 230px;
+}
+
+.gif{
+float: left;
+}
+
+.img1{
+position: relative;
+top: 3020px;
+height: 10px;
+width: 20px;
+}
+.img2{
+position: relative;
+top: 2980px;
+height: 10px;
+width: 20px;
+left: 800px;
+}
+
+
+
+/* SOCIAL BUTTONS SVG CSS */
+
+
+.social_button{
+/*position: absolute;
+top: 50%;
+transform: translateY(-50%);
+width: 100%;
+text-align: center;
+*/
+
+}
+
+.btn{
+display: inline-block;
+width: 40px;
+height: 40px;
+background:#f1f1f1;
+margin:10px;
+border-radius: 30%;
+box-shadow: 0 5px 15px -5px #00000070;
+color: #3498db;
+overflow: hidden;
+position: relative;
+}
+
+.btn img {
+line-height: 90px;
+transition: 0.2s linear;
+height: 110%;
+color: #3498db;
+}
+
+.btn:hover img {
+transform: scale(1.8);
+color: #f1f1f1;
+}
+
+/*adsadsadsadsadasdas*/
+
+.btn::before{
+content: "";
+position: absolute;
+width: 120%;
+height: 120%;
+background: #3498db;
+transform: rotate(45deg);
+left: -110%;
+top: 90%;
+}
+
+.btn:hover::before{
+animation: zoom 0.7s 1;
+top:-10%;
+left:-10%;
+}
+
+@keyframes zoom {
+0%{
+left: -110%;
+top: 90%;
+
+}50%{
+left: 10%;
+top: -30%;
+
+}100%{
+top:-10%;
+left:-10%;
+}
+}

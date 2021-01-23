@@ -1,0 +1,253 @@
+/* html page*/
+
+html{
+	border:0;
+	font:inherit;
+	font-size:100%;
+	margin:0;
+	padding:0;
+	vertical-align:baseline;
+}
+
+section {
+	display:block;
+}
+
+html, body{
+	 background-color:#222211;
+	 font-family: "Montserrat", sans-serif;
+	 font-size: 16px; 
+	 color: #444422;
+	  
+}
+
+.clear {clear: both;}
+
+
+/*stlying the paragraphs,titles and contents*/
+
+
+p {
+	font-size: 1em;
+	line-height: 1.4em;
+	margin-bottom: 20px;
+	color: #444;
+}
+
+#cv {
+	width: 90%;
+	max-width: 800px;
+	background: #d4d4aa;
+	margin: 30px auto;
+}
+
+.mainDetails {
+	padding: 25px 35px;
+	border-bottom: 2px solid #cf8a05;
+	background: #c3c388;
+	
+}
+
+#name h1 {
+	font-size: 1.2em;
+	font-weight: 700;
+	font-family: "Montserrat", sans-serif;
+	margin-bottom: -6px;
+	padding-left:38px;
+	
+}
+
+#name h2 {
+	font-size: 2em;
+	margin-left: 2px;
+	font-family: "Montserrat", sans-serif;
+}
+
+#mainArea {
+	padding: 0 40px;
+}
+
+#headshot {
+	width: 12.5%;
+	float: right;
+	margin-right: 30px;
+}
+
+#headshot img {
+	width: 140px;
+	height: 180px;
+	border-radius:30px;
+	margin-top:15px;
+	margin-right:20px;
+	
+}
+
+#name {
+	float: left;
+}
+
+#contactDetails {
+	float: left;
+	margin-top:24px;
+	
+}
+
+#contactDetails ul {
+	list-style-type: none;
+	font-size: 1.0em;
+	margin-top: 2px;
+	line-height:25px;
+	
+}
+
+#contactDetails ul li {
+	margin-bottom: 3px;
+	color: #444;
+	padding-right:10px;
+}
+
+#contactDetails ul li a {
+	color: #444; 
+	text-decoration: none;
+	transition: all .3s ease-in;
+}
+
+#contactDetails ul li a:hover { 
+	color: #cf8a05;
+}
+
+
+section {
+	border-top: 1px solid #dedede;
+	padding: 20px 0 0;
+}
+
+section:first-child {
+	border-top: 0;
+}
+
+section:last-child {
+	padding: 20px 0 10px;
+}
+
+.sectionTitle {
+	float: left;
+	width: 25%;
+	
+}
+
+.sectionContent {
+	float: right;
+	width: 72.5%;
+}
+
+.sectionTitle h1 {
+	font-family: "Montserrat", sans-serif;
+	font-style: italic;
+	font-size: 1.5em;
+	color: #77773c;
+}
+
+.sectionContent h2 {
+	font-family: "Montserrat", sans-serif;
+	font-size: 1.5em;
+	margin-bottom: -2px;
+}
+
+.subDetails {
+	font-size: 1.0em;
+	font-style: italic;
+	margin-bottom: 3px;
+	margin-left:20px;
+}
+
+.achivements{
+	line-height:25px;
+}
+
+.schoolName{
+	margin-left:20px;
+	font-size: 1em;
+}
+
+.para{
+	line-height:25px;
+	margin-left:20px;
+}
+
+.keySkills {
+	list-style-type: none;
+	column-count:3;
+	margin-bottom: 20px;
+	font-size: 1em;
+	color: #444;
+	line-height:25px;
+}
+
+.keySkills ul li {
+	margin-bottom: 3px;
+}
+
+/*using media queries for to make responsive cv */
+
+@media all and (min-width: 602px) and (max-width: 800px) {
+	#headshot {
+		display: none;
+	}
+	
+}
+
+@media all and (max-width: 601px) {
+	#cv {
+		width: 95%;
+		margin: 10px auto;
+		min-width: 280px;
+	}
+	
+	#headshot {
+		display: none;
+	}
+	
+	#name, #contactDetails {
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+	
+	.sectionTitle, .sectionContent {
+		float: none;
+		width: 100%;
+	}
+	
+	.sectionTitle {
+		margin-left: -2px;
+		font-size: 1.25em;
+	}
+	
+}
+
+@media all and (max-width: 480px) {
+	.mainDetails {
+		padding: 15px 15px;
+	}
+	
+	section {
+		padding: 15px 0 0;
+	}
+	
+	#mainArea {
+		padding: 0 25px;
+	}
+
+	#name h1 {
+		line-height: .8em;
+		margin-bottom: 4px;
+	}
+}
+
+@media print {
+    #cv {
+        width: 100%;
+    }
+}
+

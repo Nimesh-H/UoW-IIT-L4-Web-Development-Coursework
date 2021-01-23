@@ -1,0 +1,556 @@
+
+
+
+/* SOCIAL BUTTONS SVG CSS */
+
+
+.social_button{
+  /*position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+  */
+
+}
+
+.btn{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background:#f1f1f1;
+  margin:10px;
+  border-radius: 30%;
+  box-shadow: 0 5px 15px -5px #00000070;
+  color: #3498db;
+  overflow: hidden;
+  position: relative;
+}
+
+.btn img {
+  line-height: 90px;
+  transition: 0.2s linear;
+  height: 110%;
+  color: #3498db;
+}
+
+.btn:hover img {
+  transform: scale(1.8);
+  color: #f1f1f1;
+}
+
+/*adsadsadsadsadasdas*/
+
+.btn::before{
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background: #3498db;
+  transform: rotate(45deg);
+  left: -110%;
+  top: 90%;
+}
+
+.btn:hover::before{
+  animation: zoom 0.7s 1;
+  top:-10%;
+  left:-10%;
+}
+
+@keyframes zoom {
+  0%{
+    left: -110%;
+    top: 90%;
+
+  }50%{
+    left: 10%;
+    top: -30%;
+
+  }100%{
+    top:-10%;
+    left:-10%;
+  }
+}
+
+.sitebg{
+  font-family: arial;
+}
+
+.column1{
+  float: left;
+  width: 35%;
+  
+  margin-top:-100px;
+}
+
+.column2{
+  float: right;
+  width: 65%;
+}
+
+.h1{
+  text-align: left;
+  font-size: 25px;
+}
+
+
+.links ul{
+  list-style: none;
+  margin: 0;
+}
+
+.links ul li {
+  padding: 15px;
+  position: relative;
+  width: 200px;
+  background-color:#34495E;
+  border-top: 1px solid #BDC3C7;
+
+}
+
+.sitemap{
+  position: absolute;
+  left: 0;
+}
+
+.links ul ul{
+  transition: all 0.3s;
+  opacity: 0;
+  position: absolute;
+  visibility: hidden;
+  left: 83.5%;
+  top:-2%;
+  display: block;
+
+
+}
+
+.links ul li:hover>ul{
+  opacity: 1;
+  visibility: visible;
+}
+.MENUSVG{
+  height:22px;
+  width:22px;
+  float: left;
+}
+
+.MENUSVG-ABOUTUS{
+  height:22px;
+  width:22px;
+  float: left;
+}
+
+
+.links ul li a{
+  text-decoration: none;
+  color: white;
+}
+.sitemap{
+  float: left;
+  width: 40%;
+}
+.image{
+  float: right;
+  width: 60%;
+
+}
+
+/*------------------------------------------- */
+/* Setting element margin,padding to zero */
+/*------------------------------------------- */
+
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+/*------------------------------------------- */
+/*Setting up the html page*/
+/*------------------------------------------- */
+
+html,
+body {
+  background-color:#fffs;
+  color:#555;
+  font-family: "Montserrat", sans-serif;
+  font-weight:300px;
+  font-size:20px;
+  scroll-behavior:smooth;
+  text-rendering:optimizelegibility;
+}
+
+/*------------------------------------------- */
+/*Header*/
+/*------------------------------------------- */
+
+header{
+  background-color:#000000;
+  height:15vh;
+}
+
+.logo{
+  height:80px;
+  width:80px;
+  float:left;
+  margin-top:10px;
+  margin-left:10px;
+  padding-bottom:5px;
+}
+
+.main-nav{
+
+  list-style:none;
+  margin-top:0px;
+  padding-bottom:30px;
+
+}
+
+.main-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  float:right;
+}
+
+.main-nav li{
+  display:inline-block;
+  margin-left:25px;
+  margin-right:25px;
+  margin-top:25px;
+  float:right;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+  padding:8px 0;
+  color:#fff;
+  text-decoration:none;
+  text-transform:uppercase;
+  font-size:90%;
+  border-bottom:2px solid transparent;
+  transition:border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+  border-bottom:2px solid #e67e22;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+/*------------------------------------------- */
+/*Footer*/
+/*------------------------------------------- */
+
+footer{
+  background-color:#333;
+}
+
+footer p{
+  color:#888;
+  text-align:center;
+  font-size:90%;
+  margin-top:30px;
+  padding:20px 20px;
+  line-height:30px;
+}
+
+/*------------------------------------------- */
+/*Forms*/
+/*------------------------------------------- */
+
+
+.content3{
+  margin:30px 40px;
+}
+
+.container {
+  border-radius: 5px;
+  background-color:#c2d6d6;
+  padding: 20px;
+  color:;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+input[type=email], select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide,
+   make the two columns stack on top of each other instead of next to each other
+ */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/*------------------------------------------- */
+/*Editor part*/
+/*------------------------------------------- */
+
+.editPerson{
+  text-decoration:none;
+  text-align:center;
+  color:#cc0066;
+}
+
+.editPerson:hover{
+  color:#9900ff;
+}
+
+
+
+.editor-CV{
+  text-align:center;
+  padding-top:20px;
+}
+
+/*------------------------------------------- */
+/*Using Media Queries to make the website responsive
+/*------------------------------------------- */
+
+/*Small tablet to big tablets:from 768px to 1023px*/
+@media only screen and (max-width:1172px){
+  .main-nav li{display:none;}
+}
+
+
+/*Small phone to small tablets:from 481px to 767px*/
+@media only screen and (max-width:500px){
+  body{font-size:16px;}
+
+  .logo{
+    padding-bottom:15px;
+    width:90px;
+  }
+
+
+}
+
+
+
+
+.social_button{
+
+
+}
+
+.svg-lineHome{
+  position: absolute;
+  left: 820px;
+  top: 235px;
+}
+
+.svg-lineHomebefore{
+  position: absolute;
+  left: 820px;
+  top: 175px;
+}
+.HOME{
+  position: absolute;
+  left: 792px;
+  top: 190px;
+}
+
+.PRESENTATIONPAGE{
+  position: absolute;
+  left: 732px;
+  top: 130px;
+  border: 1px solid black ;
+}
+
+.svg-lineHomeAfter{
+  position: absolute;
+  left: 420px;
+  top: 295px;
+}
+
+.svg-lineHomeAFterdown1{
+  position: absolute;
+  left: 420px;
+  top: 295px;
+}
+.svg-lineHomeAFterdown2{
+  position: absolute;
+  left: 550px;
+  top: 295px;
+}
+.svg-lineHomeAFterdown3{
+  position: absolute;
+  left: 700px;
+  top: 295px;
+
+}
+.svg-lineHomeAFterdown4{
+  position: absolute;
+  left: 930px;
+  top: 295px;
+
+}
+.svg-lineHomeAFterdown5{
+  position: absolute;
+  left: 1080px;
+  top: 295px;
+
+}
+.svg-lineHomeAFterdown6{
+  position: absolute;
+  left: 1219px;
+  top: 295px;
+
+}
+
+.whatsNew{
+  position: absolute;
+  left: 370px;
+  top: 345px;
+}
+.aboutUs{
+  position: absolute;
+  left: 510px;
+  top: 355px;
+}
+.quiz{
+  position: absolute;
+  left: 680px;
+  top: 345px;
+}
+.shop{
+  position: absolute;
+  left: 905px;
+  top: 345px;
+}
+.feedback{
+  position: absolute;
+  left: 1050px;
+  top: 345px;
+}
+.siteMap{
+  position: absolute;
+  left: 1180px;
+  top: 345px;
+}
+.student1{
+  position: absolute;
+  left: 510px;
+  top: 410px;
+
+}
+.student2{
+  position: absolute;
+  left: 510px;
+  top: 440px;
+
+}
+.student3{
+  position: absolute;
+  left: 510px;
+  top: 470px;
+
+}
+.student4{
+  position: absolute;
+  left: 510px;
+  top: 500px;
+
+
+}
+
+
+.svg-lineHomeAFteraboutus{
+  position: absolute;
+  left: 550px;
+  top: 400px;
+}
+
+p{
+  color: black;
+  border:1px solid black;
+  padding: 4px;
+}
+
+.copyright{
+  background-color: #0F0E0F;
+  height: 30px;
+  width: 100%;
+
+}

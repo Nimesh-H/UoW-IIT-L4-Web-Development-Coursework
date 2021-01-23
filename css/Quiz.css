@@ -1,0 +1,269 @@
+.main-content .back-image{
+    width: 100%;
+    height: 100vh;
+    max-height: 800px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+#time {
+	
+	width: 20%;
+	height: 50px;
+	margin-left:-1%;
+	border-radius: 50px;
+	padding: 10px;
+	padding-left:25px;
+	background:#404040;
+	font-size: 25px;
+	color: WhiteSmoke ;
+	text-align: left;
+	font-family: "Montserrat", sans-serif;
+	position:fixed;
+	margin-top:-5px;
+}
+	
+/* heading */
+
+.container{
+   
+    max-width: 2500px;
+    padding: 30px 0;
+    margin: auto;
+	background-image:url("images/QuizBackground.jpg");
+	
+}
+/*custom radio button */
+.container-input {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+.container-input input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 50%;
+  padding:10px;
+  margin-top:3px;
+}
+
+
+.container-input:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.container-input input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container-input input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container-input .checkmark:after {
+ 	top: 6px;
+	left: 6px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+#h1{
+	font-size: 32px;
+	color: #00331a ;
+	font-family: "Montserrat", sans-serif;
+	text-align: center;
+	margin-left:-50px;
+	padding-top:15px;
+	background: #b7b77b;
+	font-weight: 800;
+
+}
+.heading{
+	font-size: 30px;
+	color: #00331a ;
+	font-family: "Montserrat", sans-serif;
+	text-align: center;
+	margin-top:-30px;
+	background: #b7b77b;
+	padding: 10px; 
+	width: 101%;
+	height: 120px; 
+	margin-left:-20px;
+	
+}
+	
+/* container for the quiz */
+#quiz {
+	font-family: "Montserrat", sans-serif;
+	width: 72%;
+	margin-left: 20%;
+	border-radius: 30px;
+	padding: 20px 20px 20px 20px;
+	background: black  ;
+	color: white ;
+	opacity: 0.93;
+	display: flex;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.13);
+	margin-top:-30px;
+	
+	}
+
+
+
+/* question Box*/
+
+.QBox{
+	border-radius: 25px;
+	font-family: "Montserrat", sans-serif;
+	background: #212112;
+	padding: 20px; 
+	width: 1100px;
+	height: 60px; 
+	font-weight: 800;
+	
+}	
+
+/* buttons */
+
+
+
+.button1{
+	margin-left:400px;
+}
+ .button2{
+	 margin-left:1050px;
+	 margin-bottom:10px;
+	 
+ }
+ .button3{
+	 margin-top:-68px;
+	 
+ }
+#button1 {
+	border-radius: 25px;
+	font-family: "Montserrat", sans-serif;
+	background: #212112;
+	padding: 10px; 
+	width: 500px;
+	height: 60px; 
+	font-weight: 800;
+	font-size: 25px;
+	text-align: center;
+	margin-right:800px;
+	color:#ffff;
+}
+
+#button1:hover {
+	background: #595959;
+	color: WhiteSmoke;
+	cursor: pointer;
+	}
+#button2 {
+	border-radius: 25px;
+	font-family: "Montserrat", sans-serif;
+	background: #212112;
+	padding: 10px; 
+	width: 250px;
+	height: 60px; 
+	font-weight: 800;
+	font-size: 19px;
+	text-align: center;
+	margin-right:200px;
+	color:#ffff;
+	
+	}
+
+#button2:hover {
+	background: #595959;
+	color: WhiteSmoke;
+	cursor: pointer;
+	}
+	
+.qLink:hover{
+    background: #737373;
+	border-radius:80%;
+	}
+
+/* display after submit */	
+#after_submit{
+	visibility: hidden;
+	border-radius: 25px;
+	background: #212112;
+	padding-top: 20px; 
+	width: 1300px;
+	height: 80px; 
+	font-weight: 800;
+	font-size: 18px;
+	text-align: center;
+	margin-right:200px;
+	
+	}
+
+
+
+/* footer */		
+.footer {
+	width: 95%;
+	font-family: "Montserrat", sans-serif;
+	height: 35%;
+	border-radius: 30px;
+	padding: 5px 5px 8px 20px;
+	background: #808080;
+	color: WhiteSmoke;
+	
+	}
+
+
+	

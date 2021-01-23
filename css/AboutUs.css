@@ -1,0 +1,76 @@
+.container{
+   
+    max-width: 2500px;
+	height:1000px;
+    padding: 30px 0;
+    margin: auto;
+    background-image:url("images/AboutUsBackground.jpg");
+	background-size: cover;
+}
+
+
+
+
+#h1{
+	font-family: "Montserrat", sans-serif;
+	color: #00331a ;
+	text-align: center; 
+	font-size:30px;
+	padding-right:100px;
+	padding-top:10px;
+	font-weight: 900;
+
+}
+.heading2{
+	font-size: 30px;
+	color: #00331a ;
+	font-family: "Montserrat", sans-serif;
+	text-align: center;
+	margin-top:-30px;
+	background: #b7b77b;
+	padding: 10px; 
+	width: 101%;
+	height: 120px; 
+	margin-left:-20px;
+	
+}
+
+/* Parent Container */
+.content_img{
+    position: relative;
+    width:300px;
+	height:450px;
+    float: left;
+    margin-right:55px;
+	margin-left:90px;
+	margin-top:80px;
+}
+
+/* Child Text Container */
+.content_img div{
+    width:300px;
+	position: absolute;
+    bottom: 0;
+    background: black;
+    color: white;
+	font-weight: 800;
+    margin-bottom: 25px;
+    font-family: "Montserrat", sans-serif;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.5s linear;  
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+/* Hover on Parent Container */
+.content_img:hover{
+    cursor: pointer;
+}    
+
+.content_img:hover div{
+    width: 300px;
+    padding: 20px 60px;
+    visibility: visible;
+    opacity: 0.7;        
+}
+#all{overflow:hidden;}

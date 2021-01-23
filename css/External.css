@@ -1,0 +1,236 @@
+/*------------------------------------------- */
+/* Setting element margin,padding to zero */
+/*------------------------------------------- */
+
+ * {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;	
+ }
+ 
+/*------------------------------------------- */
+/*Setting up the html page*/
+/*------------------------------------------- */
+
+html,
+body {
+	background-color:#fffs;
+	
+	
+	
+	
+	color:#555;
+	font-family: "Montserrat", sans-serif;
+	font-weight:300px;
+	font-size:20px;
+	scroll-behavior:smooth;
+	text-rendering:optimizelegibility;	
+ }
+ 
+/*------------------------------------------- */
+/*Header with nav*/
+/*------------------------------------------- */
+ 
+ header{
+	 background-color:#000000;
+	 height:15vh;	 
+ }
+
+ .logo{
+	 position:absolute;
+	 height:90px;
+	 width:280px;
+	 float:left;
+	 margin-top:px;
+	 margin-left:20px;
+	
+ }
+ 
+ .main-nav{
+	 
+	 list-style:none;
+	 margin-top:px;
+	 padding-bottom:30px;
+
+ }
+ 
+ .main-nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	float:right;
+}
+ 
+ .main-nav li{
+	 display:inline-block;
+	 margin-left:25px;	 
+	 margin-right:25px;
+	 margin-top:25px;
+	 float:right;
+ }
+ 
+ .main-nav li a:link,
+ .main-nav li a:visited{
+	 padding:8px 0;
+	 color:#fff;
+	 text-decoration:none;
+	 text-transform:uppercase;
+	 font-size:90%;
+	 border-bottom:2px solid transparent;
+	 transition:border-bottom 0.2s;
+ }
+ 
+ .main-nav li a:hover,
+ .main-nav li a:active{
+	 border-bottom:2px solid #e67e22;
+ }
+ ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+   margin-top:8px;
+  border: none;
+  outline: none;
+  color: white;
+	font-size:90%;
+  background-color: inherit;
+  
+  
+}
+
+ .dropdown:hover .dropbtn {
+  
+  border-bottom:2px solid #e67e22;
+}
+
+.dropdown-content {
+  display:none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  
+  padding: 12px 16px;
+  text-decoration: none;
+  
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  
+} 
+/*------------------------------------------- */
+/*Footer*/
+/*------------------------------------------- */
+
+footer{
+	background-color:#333;
+}
+
+footer p{
+	color:#888;
+	text-align:center;
+	font-size:90%;
+	margin-top:30px;
+	padding:20px 20px;
+	line-height:30px;
+}
+
+
+
+/* Responsive layout - when the screen is less than 600px wide, 
+   make the two columns stack on top of each other instead of next to each other
+ */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/*------------------------------------------- */
+/*Editor part*/
+/*------------------------------------------- */
+
+.editPerson{
+	text-decoration:none;
+	text-align:center;
+	color:#cc0066;
+}
+
+.editPerson:hover{
+	color:#9900ff;
+}
+
+
+
+.editor-CV{
+	text-align:center;
+	padding-top:20px;	
+}
+
+/*------------------------------------------- */
+/*Using Media Queries to make the website responsive
+/*------------------------------------------- */
+
+/*Small tablet to big tablets:from 768px to 1023px*/
+ @media only screen and (max-width:1172px){
+			.main-nav li{display:none;}
+ }
+
+
+ /*Small phone to small tablets:from 481px to 767px*/
+ @media only screen and (max-width:500px){
+	 body{font-size:16px;}
+	 
+	.logo{
+		padding-bottom:15px;
+		width:90px;
+	}
+	 
+	 	 
+ }
+ 
+
+
+ 
+ 
